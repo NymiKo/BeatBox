@@ -1,6 +1,6 @@
 package com.easyprog.android.beatbox.model
 
-class Sound(val assetPath: String) {
+class Sound(val assetPath: String, var soundId: Int? = null) {
     companion object {
         private const val WAV = ".wav"
     }
