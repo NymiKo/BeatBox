@@ -29,8 +29,9 @@ class SoundViewModelTest {
 
     @Test
     fun callsBeatBoxPlayOnButtonClicked() {
-        subject.onButtonClicked()
+        val speed = 1.0f
+        subject.onButtonClicked(speed)
 
-        verify(beatBox).play(sound)
+        verify(beatBox).play(sound, speed)
     }
 }

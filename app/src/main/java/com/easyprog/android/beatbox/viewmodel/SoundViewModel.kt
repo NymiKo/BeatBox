@@ -13,6 +13,8 @@ class SoundViewModel(private val beatBox: BeatBox) : BaseObservable() {
         }
     }
 
+    var speedSound = 1.0f
+
     var sound: Sound? = null
         set(sound) {
             field = sound
