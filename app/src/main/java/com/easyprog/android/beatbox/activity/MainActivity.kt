@@ -24,7 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(context, 3)
-            adapter = SoundAdapter(beatBox.sounds)
+            adapter = SoundAdapter(beatBox)
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        beatBox.release()
     }
 }
