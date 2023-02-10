@@ -12,7 +12,6 @@
         android:layout_height="120dp"
         android:layout_margin="8dp"
         android:onClick="@{() -> viewModel.onButtonClicked()}"
-        android:text="@{viewModel.title}"
-        style="@style/BeatBoxButton.Strong"/>
+        android:text="@{viewModel.title}"/>
 
 </layout>
